@@ -9,6 +9,7 @@ use Prometheus\Counter;
 use Prometheus\Gauge;
 use Prometheus\Histogram;
 use Prometheus\RenderTextFormat;
+use Prometheus\Storage\InMemory;
 use Prometheus\Storage\Redis;
 use RuntimeException;
 
@@ -37,12 +38,17 @@ class MetricsService
     {
         $this->namespace = config('app.prometheus_namespace', 'app');
         try {
-            // Set up Redis as the adapter if none is provided
+            // Set up Redis as the adapter if none is provided.
+            // Prometheus Redis storage requires the phpredis extension; fall back for predis-only setups.
             if ($adapter === null) {
-                $adapter = new Redis([
-                    'host' => config('database.redis.default.host'),
-                    'port' => config('database.redis.default.port'),
-                ]);
+                if (extension_loaded('redis')) {
+                    $adapter = new Redis([
+                        'host' => config('database.redis.default.host'),
+                        'port' => config('database.redis.default.port'),
+                    ]);
+                } else {
+                    $adapter = new InMemory();
+                }
             }
             $this->collectionRegistry = new CollectorRegistry($adapter);
         } catch (Exception $e) {
