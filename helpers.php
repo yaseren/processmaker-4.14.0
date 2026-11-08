@@ -276,3 +276,36 @@ if (!function_exists('shouldShow')) {
         }
     }
 }
+
+if (!function_exists('pm_is_rtl')) {
+    function pm_is_rtl(?string $locale = null): bool
+    {
+        return in_array($locale ?? app()->getLocale(), ['fa', 'ar', 'he'], true);
+    }
+}
+
+if (!function_exists('pm_dir')) {
+    function pm_dir(): string
+    {
+        return pm_is_rtl() ? 'rtl' : 'ltr';
+    }
+}
+
+if (!function_exists('pm_css_variant')) {
+    /**
+     * @param string $basename e.g. "css/app.css"
+     */
+    function pm_css_variant(string $basename): string
+    {
+        if (!pm_is_rtl()) {
+            return $basename;
+        }
+
+        $pathInfo = pathinfo($basename);
+        $dirname = ($pathInfo['dirname'] ?? '.') !== '.' ? $pathInfo['dirname'] . '/' : '';
+        $filename = $pathInfo['filename'] ?? '';
+        $extension = isset($pathInfo['extension']) ? '.' . $pathInfo['extension'] : '';
+
+        return $dirname . $filename . '.rtl' . $extension;
+    }
+}

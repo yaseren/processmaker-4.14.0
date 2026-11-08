@@ -1321,4 +1321,13 @@ body {
    font-size: 1rem !important;
   };
 }
+
+[dir="rtl"] .dropdown-menu.page-dropdown-menu {
+  z-index: 2000;
+  translate: calc(-100% + 2.5rem) 0;
+}
+
+[dir="rtl"] #screen-container .nav-tabs-nowrap:has(.dropdown.show) {
+  overflow: visible !important;
+}
 </style>

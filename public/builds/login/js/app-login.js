@@ -2944,13 +2944,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_lang_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/lang.js */ "./resources/js/modules/lang.js");
 /* harmony import */ var _components_common_mixins_accessibility__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/common/mixins/accessibility */ "./resources/js/components/common/mixins/accessibility.js");
 var _document$head$queryS;
-function cov_29gvc0phgt() {
-  var path = "D:\\vespar\\dev projects\\processmaker-4.14.0\\processmaker-4.14.0\\resources\\js\\app-login.js";
-  var hash = "5c076490c04c6af130c1efe4fa454a14678f6637";
+function cov_2fp6uwitfo() {
+  var path = "/var/www/html/resources/js/app-login.js";
+  var hash = "96d7202adc0a0fe0c86bd37f137f7d2dd54ce4aa";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "D:\\vespar\\dev projects\\processmaker-4.14.0\\processmaker-4.14.0\\resources\\js\\app-login.js",
+    path: "/var/www/html/resources/js/app-login.js",
     statementMap: {
       "0": {
         start: {
@@ -3928,7 +3928,7 @@ function cov_29gvc0phgt() {
       "7": [0, 0]
     },
     _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    hash: "5c076490c04c6af130c1efe4fa454a14678f6637"
+    hash: "96d7202adc0a0fe0c86bd37f137f7d2dd54ce4aa"
   };
   var coverage = global[gcv] || (global[gcv] = {});
   if (!coverage[path] || coverage[path].hash !== hash) {
@@ -3937,13 +3937,13 @@ function cov_29gvc0phgt() {
   var actualCoverage = coverage[path];
   {
     // @ts-ignore
-    cov_29gvc0phgt = function () {
+    cov_2fp6uwitfo = function () {
       return actualCoverage;
     };
   }
   return actualCoverage;
 }
-cov_29gvc0phgt();
+cov_2fp6uwitfo();
 
 
 
@@ -3959,35 +3959,35 @@ cov_29gvc0phgt();
 
 
 
-cov_29gvc0phgt().s[0]++;
+cov_2fp6uwitfo().s[0]++;
 window.__ = _modules_lang_js__WEBPACK_IMPORTED_MODULE_7__["default"];
-cov_29gvc0phgt().s[1]++;
+cov_2fp6uwitfo().s[1]++;
 window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
-cov_29gvc0phgt().s[2]++;
+cov_2fp6uwitfo().s[2]++;
 window.Popper = (__webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js")["default"]);
-cov_29gvc0phgt().s[3]++;
+cov_2fp6uwitfo().s[3]++;
 window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-cov_29gvc0phgt().s[4]++;
+cov_2fp6uwitfo().s[4]++;
 window.Vue = vue__WEBPACK_IMPORTED_MODULE_9__["default"];
-cov_29gvc0phgt().s[5]++;
+cov_2fp6uwitfo().s[5]++;
 window.vue = vue__WEBPACK_IMPORTED_MODULE_9__;
-cov_29gvc0phgt().s[6]++;
+cov_2fp6uwitfo().s[6]++;
 window.bootstrap = bootstrap__WEBPACK_IMPORTED_MODULE_0__;
-cov_29gvc0phgt().s[7]++;
+cov_2fp6uwitfo().s[7]++;
 window.Vue.use((vue_cookies__WEBPACK_IMPORTED_MODULE_6___default()));
-cov_29gvc0phgt().s[8]++;
+cov_2fp6uwitfo().s[8]++;
 window.Vue.use(_panter_vue_i18next__WEBPACK_IMPORTED_MODULE_5__["default"]);
-var translationsLoaded = (cov_29gvc0phgt().s[9]++, false);
-var mdates = (cov_29gvc0phgt().s[10]++, JSON.parse((_document$head$queryS = document.head.querySelector("meta[name=\"i18n-mdate\"]")) === null || _document$head$queryS === void 0 ? void 0 : _document$head$queryS.content));
+var translationsLoaded = (cov_2fp6uwitfo().s[9]++, false);
+var mdates = (cov_2fp6uwitfo().s[10]++, JSON.parse((_document$head$queryS = document.head.querySelector("meta[name=\"i18n-mdate\"]")) === null || _document$head$queryS === void 0 ? void 0 : _document$head$queryS.content));
 
 // Make $t available to all vue instances
-cov_29gvc0phgt().s[11]++;
+cov_2fp6uwitfo().s[11]++;
 vue__WEBPACK_IMPORTED_MODULE_9__["default"].mixin({
   i18n: new _panter_vue_i18next__WEBPACK_IMPORTED_MODULE_5__["default"](i18next__WEBPACK_IMPORTED_MODULE_1__["default"])
 });
-cov_29gvc0phgt().s[12]++;
+cov_2fp6uwitfo().s[12]++;
 vue__WEBPACK_IMPORTED_MODULE_9__["default"].mixin(_components_common_mixins_accessibility__WEBPACK_IMPORTED_MODULE_8__["default"]);
-cov_29gvc0phgt().s[13]++;
+cov_2fp6uwitfo().s[13]++;
 window.ProcessMaker = {
   i18n: i18next__WEBPACK_IMPORTED_MODULE_1__["default"],
   /**
@@ -3997,25 +3997,25 @@ window.ProcessMaker = {
   packages: [],
   missingTranslations: new Set(),
   missingTranslation: function missingTranslation(value) {
-    cov_29gvc0phgt().f[0]++;
-    cov_29gvc0phgt().s[14]++;
+    cov_2fp6uwitfo().f[0]++;
+    cov_2fp6uwitfo().s[14]++;
     if (this.missingTranslations.has(value)) {
-      cov_29gvc0phgt().b[0][0]++;
-      cov_29gvc0phgt().s[15]++;
+      cov_2fp6uwitfo().b[0][0]++;
+      cov_2fp6uwitfo().s[15]++;
       return;
     } else {
-      cov_29gvc0phgt().b[0][1]++;
+      cov_2fp6uwitfo().b[0][1]++;
     }
-    cov_29gvc0phgt().s[16]++;
+    cov_2fp6uwitfo().s[16]++;
     this.missingTranslations.add(value);
-    cov_29gvc0phgt().s[17]++;
+    cov_2fp6uwitfo().s[17]++;
     console.warn("Missing Translation:", value);
   },
   $notifications: {
     icons: {}
   }
 };
-cov_29gvc0phgt().s[18]++;
+cov_2fp6uwitfo().s[18]++;
 window.ProcessMaker.i18nPromise = i18next__WEBPACK_IMPORTED_MODULE_1__["default"].use((i18next_chained_backend__WEBPACK_IMPORTED_MODULE_2___default())).init({
   lng: document.documentElement.lang,
   fallbackLng: "en",
@@ -4025,20 +4025,20 @@ window.ProcessMaker.i18nPromise = i18next__WEBPACK_IMPORTED_MODULE_1__["default"
   nsSeparator: false,
   keySeparator: false,
   parseMissingKeyHandler: function parseMissingKeyHandler(value) {
-    cov_29gvc0phgt().f[1]++;
-    cov_29gvc0phgt().s[19]++;
+    cov_2fp6uwitfo().f[1]++;
+    cov_2fp6uwitfo().s[19]++;
     if (!translationsLoaded) {
-      cov_29gvc0phgt().b[1][0]++;
-      cov_29gvc0phgt().s[20]++;
+      cov_2fp6uwitfo().b[1][0]++;
+      cov_2fp6uwitfo().s[20]++;
       return value;
     } else {
-      cov_29gvc0phgt().b[1][1]++;
+      cov_2fp6uwitfo().b[1][1]++;
     }
     // Report that a translation is missing
-    cov_29gvc0phgt().s[21]++;
+    cov_2fp6uwitfo().s[21]++;
     window.ProcessMaker.missingTranslation(value);
     // Fallback to showing the english version
-    cov_29gvc0phgt().s[22]++;
+    cov_2fp6uwitfo().s[22]++;
     return value;
   },
   backend: {
@@ -4052,10 +4052,10 @@ window.ProcessMaker.i18nPromise = i18next__WEBPACK_IMPORTED_MODULE_1__["default"
     }]
   }
 });
-cov_29gvc0phgt().s[23]++;
+cov_2fp6uwitfo().s[23]++;
 window.ProcessMaker.i18nPromise.then(function () {
-  cov_29gvc0phgt().f[2]++;
-  cov_29gvc0phgt().s[24]++;
+  cov_2fp6uwitfo().f[2]++;
+  cov_2fp6uwitfo().s[24]++;
   translationsLoaded = true;
 });
 
@@ -4064,85 +4064,85 @@ window.ProcessMaker.i18nPromise.then(function () {
  * REST api endpoints through oauth authentication
  *
  */
-cov_29gvc0phgt().s[25]++;
+cov_2fp6uwitfo().s[25]++;
 window.ProcessMaker.apiClient = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-cov_29gvc0phgt().s[26]++;
+cov_2fp6uwitfo().s[26]++;
 window.ProcessMaker.apiClient.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest";
 
 // Setup api versions
-var apiVersionConfig = (cov_29gvc0phgt().s[27]++, [{
+var apiVersionConfig = (cov_2fp6uwitfo().s[27]++, [{
   version: "1.0",
   baseURL: "/api/1.0/"
 }, {
   version: "1.1",
   baseURL: "/api/1.1/"
 }]);
-cov_29gvc0phgt().s[28]++;
+cov_2fp6uwitfo().s[28]++;
 window.ProcessMaker.apiClient.defaults.baseURL = apiVersionConfig[0].baseURL;
-cov_29gvc0phgt().s[29]++;
+cov_2fp6uwitfo().s[29]++;
 window.ProcessMaker.apiClient.interceptors.request.use(function (config) {
-  cov_29gvc0phgt().f[3]++;
-  cov_29gvc0phgt().s[30]++;
-  if ((cov_29gvc0phgt().b[3][0]++, typeof config.url !== "string") || (cov_29gvc0phgt().b[3][1]++, !config.url)) {
-    cov_29gvc0phgt().b[2][0]++;
-    cov_29gvc0phgt().s[31]++;
+  cov_2fp6uwitfo().f[3]++;
+  cov_2fp6uwitfo().s[30]++;
+  if ((cov_2fp6uwitfo().b[3][0]++, typeof config.url !== "string") || (cov_2fp6uwitfo().b[3][1]++, !config.url)) {
+    cov_2fp6uwitfo().b[2][0]++;
+    cov_2fp6uwitfo().s[31]++;
     throw new Error("Invalid URL in the request configuration");
   } else {
-    cov_29gvc0phgt().b[2][1]++;
+    cov_2fp6uwitfo().b[2][1]++;
   }
-  cov_29gvc0phgt().s[32]++;
+  cov_2fp6uwitfo().s[32]++;
   apiVersionConfig.forEach(function (_ref) {
     var version = _ref.version,
       baseURL = _ref.baseURL;
-    cov_29gvc0phgt().f[4]++;
-    var versionPrefix = (cov_29gvc0phgt().s[33]++, "/api/".concat(version, "/"));
-    cov_29gvc0phgt().s[34]++;
+    cov_2fp6uwitfo().f[4]++;
+    var versionPrefix = (cov_2fp6uwitfo().s[33]++, "/api/".concat(version, "/"));
+    cov_2fp6uwitfo().s[34]++;
     if (config.url.startsWith(versionPrefix)) {
-      cov_29gvc0phgt().b[4][0]++;
-      cov_29gvc0phgt().s[35]++;
+      cov_2fp6uwitfo().b[4][0]++;
+      cov_2fp6uwitfo().s[35]++;
       // eslint-disable-next-line no-param-reassign
       config.baseURL = baseURL;
       // eslint-disable-next-line no-param-reassign
-      cov_29gvc0phgt().s[36]++;
+      cov_2fp6uwitfo().s[36]++;
       config.url = config.url.replace(versionPrefix, "");
     } else {
-      cov_29gvc0phgt().b[4][1]++;
+      cov_2fp6uwitfo().b[4][1]++;
     }
   });
-  cov_29gvc0phgt().s[37]++;
+  cov_2fp6uwitfo().s[37]++;
   return config;
 });
 
 // Set the default API timeout
-var apiTimeout = (cov_29gvc0phgt().s[38]++, 5000);
-cov_29gvc0phgt().s[39]++;
-if ((cov_29gvc0phgt().b[6][0]++, window.Processmaker) && (cov_29gvc0phgt().b[6][1]++, window.Processmaker.apiTimeout !== undefined)) {
-  cov_29gvc0phgt().b[5][0]++;
-  cov_29gvc0phgt().s[40]++;
+var apiTimeout = (cov_2fp6uwitfo().s[38]++, 5000);
+cov_2fp6uwitfo().s[39]++;
+if ((cov_2fp6uwitfo().b[6][0]++, window.Processmaker) && (cov_2fp6uwitfo().b[6][1]++, window.Processmaker.apiTimeout !== undefined)) {
+  cov_2fp6uwitfo().b[5][0]++;
+  cov_2fp6uwitfo().s[40]++;
   apiTimeout = window.Processmaker.apiTimeout;
 } else {
-  cov_29gvc0phgt().b[5][1]++;
+  cov_2fp6uwitfo().b[5][1]++;
 }
-cov_29gvc0phgt().s[41]++;
+cov_2fp6uwitfo().s[41]++;
 window.ProcessMaker.apiClient.defaults.timeout = apiTimeout;
 
 // click an active tab after all components have mounted
-cov_29gvc0phgt().s[42]++;
+cov_2fp6uwitfo().s[42]++;
 vue__WEBPACK_IMPORTED_MODULE_9__["default"].use({
   install: function install(vue) {
-    cov_29gvc0phgt().f[5]++;
-    cov_29gvc0phgt().s[43]++;
+    cov_2fp6uwitfo().f[5]++;
+    cov_2fp6uwitfo().s[43]++;
     vue.mixin({
       mounted: function mounted() {
-        cov_29gvc0phgt().f[6]++;
-        cov_29gvc0phgt().s[44]++;
+        cov_2fp6uwitfo().f[6]++;
+        cov_2fp6uwitfo().s[44]++;
         if (this.$parent) {
-          cov_29gvc0phgt().b[7][0]++;
-          cov_29gvc0phgt().s[45]++;
+          cov_2fp6uwitfo().b[7][0]++;
+          cov_2fp6uwitfo().s[45]++;
           // only run on root
           return;
         } else {
-          cov_29gvc0phgt().b[7][1]++;
+          cov_2fp6uwitfo().b[7][1]++;
         }
       }
     });
@@ -4150,7 +4150,7 @@ vue__WEBPACK_IMPORTED_MODULE_9__["default"].use({
 });
 
 // Send an event when the global Vue and ProcessMaker instance is available
-cov_29gvc0phgt().s[46]++;
+cov_2fp6uwitfo().s[46]++;
 window.dispatchEvent(new Event("app-bootstrapped"));
 
 /***/ }),
@@ -4168,13 +4168,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
 
-function cov_2ei71r63yw() {
-  var path = "D:\\vespar\\dev projects\\processmaker-4.14.0\\processmaker-4.14.0\\resources\\js\\components\\common\\mixins\\accessibility.js";
-  var hash = "9a1a4f5d6c49745e3f59a6d4a28bdc40ce70140a";
+function cov_2noogbhck1() {
+  var path = "/var/www/html/resources/js/components/common/mixins/accessibility.js";
+  var hash = "a308bdbb20819dc270bbc8f82d2800a02b71c132";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "D:\\vespar\\dev projects\\processmaker-4.14.0\\processmaker-4.14.0\\resources\\js\\components\\common\\mixins\\accessibility.js",
+    path: "/var/www/html/resources/js/components/common/mixins/accessibility.js",
     statementMap: {
       "0": {
         start: {
@@ -5413,7 +5413,7 @@ function cov_2ei71r63yw() {
       "14": [0, 0]
     },
     _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    hash: "9a1a4f5d6c49745e3f59a6d4a28bdc40ce70140a"
+    hash: "a308bdbb20819dc270bbc8f82d2800a02b71c132"
   };
   var coverage = global[gcv] || (global[gcv] = {});
   if (!coverage[path] || coverage[path].hash !== hash) {
@@ -5422,48 +5422,48 @@ function cov_2ei71r63yw() {
   var actualCoverage = coverage[path];
   {
     // @ts-ignore
-    cov_2ei71r63yw = function () {
+    cov_2noogbhck1 = function () {
       return actualCoverage;
     };
   }
   return actualCoverage;
 }
-cov_2ei71r63yw();
+cov_2noogbhck1();
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
-    cov_2ei71r63yw().f[0]++;
-    cov_2ei71r63yw().s[0]++;
+    cov_2noogbhck1().f[0]++;
+    cov_2noogbhck1().s[0]++;
     return {
       focusErrors: null
     };
   },
   mounted: function mounted() {
-    cov_2ei71r63yw().f[1]++;
-    cov_2ei71r63yw().s[1]++;
+    cov_2noogbhck1().f[1]++;
+    cov_2noogbhck1().s[1]++;
     // Listen only on the root Vue instance
     if (!this.$parent) {
-      cov_2ei71r63yw().b[0][0]++;
-      cov_2ei71r63yw().s[2]++;
+      cov_2noogbhck1().b[0][0]++;
+      cov_2noogbhck1().s[2]++;
       // Set the focus within any modal or popover that is instantiated
       this.$root.$on("bv::modal::shown", this.setFocusWithin);
-      cov_2ei71r63yw().s[3]++;
+      cov_2noogbhck1().s[3]++;
       this.$root.$on("bv::popover::shown", this.setFocusWithin);
     } else {
-      cov_2ei71r63yw().b[0][1]++;
+      cov_2noogbhck1().b[0][1]++;
     }
-    cov_2ei71r63yw().s[4]++;
+    cov_2noogbhck1().s[4]++;
     if (this.focusErrors) {
-      cov_2ei71r63yw().b[1][0]++;
-      cov_2ei71r63yw().s[5]++;
+      cov_2noogbhck1().b[1][0]++;
+      cov_2noogbhck1().s[5]++;
       // watch an object for form errors
       this.$watch(this.focusErrors, this.focusErrorsChanged, {
         deep: true
       });
-      cov_2ei71r63yw().s[6]++;
+      cov_2noogbhck1().s[6]++;
       this.dontListenForApiClientError();
     } else {
-      cov_2ei71r63yw().b[1][1]++;
-      cov_2ei71r63yw().s[7]++;
+      cov_2noogbhck1().b[1][1]++;
+      cov_2noogbhck1().s[7]++;
       // default api error focusing
       this.listenForApiClientError();
     }
@@ -5476,144 +5476,144 @@ cov_2ei71r63yw();
      * @param modalId
      */
     setFocusWithin: function setFocusWithin(shownEvent, modalId) {
-      cov_2ei71r63yw().f[2]++;
-      cov_2ei71r63yw().s[8]++;
-      if ((cov_2ei71r63yw().b[3][0]++, !(shownEvent.target instanceof HTMLElement)) && (cov_2ei71r63yw().b[3][1]++, !(shownEvent.relatedTarget instanceof HTMLElement))) {
-        cov_2ei71r63yw().b[2][0]++;
-        cov_2ei71r63yw().s[9]++;
+      cov_2noogbhck1().f[2]++;
+      cov_2noogbhck1().s[8]++;
+      if ((cov_2noogbhck1().b[3][0]++, !(shownEvent.target instanceof HTMLElement)) && (cov_2noogbhck1().b[3][1]++, !(shownEvent.relatedTarget instanceof HTMLElement))) {
+        cov_2noogbhck1().b[2][0]++;
+        cov_2noogbhck1().s[9]++;
         return;
       } else {
-        cov_2ei71r63yw().b[2][1]++;
+        cov_2noogbhck1().b[2][1]++;
       }
 
       // If relatedTarget is present and an HTMLElement,
       // then we know we're working with a popover,
       // otherwise it's a modal
-      var target = (cov_2ei71r63yw().s[10]++, shownEvent.relatedTarget instanceof HTMLElement ? (cov_2ei71r63yw().b[4][0]++, shownEvent.relatedTarget) : (cov_2ei71r63yw().b[4][1]++, shownEvent.target));
+      var target = (cov_2noogbhck1().s[10]++, shownEvent.relatedTarget instanceof HTMLElement ? (cov_2noogbhck1().b[4][0]++, shownEvent.relatedTarget) : (cov_2noogbhck1().b[4][1]++, shownEvent.target));
 
       // Find the first focusable element that isn't the
       // modal/popover close button
-      var focusableElement = (cov_2ei71r63yw().s[11]++, target.querySelector("input, select, textarea, button:not(.close), a"));
+      var focusableElement = (cov_2noogbhck1().s[11]++, target.querySelector("input, select, textarea, button:not(.close), a"));
 
       // If there is an element to focus on, then do so
-      cov_2ei71r63yw().s[12]++;
+      cov_2noogbhck1().s[12]++;
       if (focusableElement instanceof HTMLElement) {
-        cov_2ei71r63yw().b[5][0]++;
+        cov_2noogbhck1().b[5][0]++;
         //do not set focus() if it is a vue-multiselect
-        var parentVue = (cov_2ei71r63yw().s[13]++, this.findHtmlElementParentVueComponent(focusableElement));
-        cov_2ei71r63yw().s[14]++;
-        if ((cov_2ei71r63yw().b[7][0]++, parentVue !== null) && (cov_2ei71r63yw().b[7][1]++, parentVue.$options.name == 'vue-multiselect')) {
-          cov_2ei71r63yw().b[6][0]++;
-          cov_2ei71r63yw().s[15]++;
+        var parentVue = (cov_2noogbhck1().s[13]++, this.findHtmlElementParentVueComponent(focusableElement));
+        cov_2noogbhck1().s[14]++;
+        if ((cov_2noogbhck1().b[7][0]++, parentVue !== null) && (cov_2noogbhck1().b[7][1]++, parentVue.$options.name == 'vue-multiselect')) {
+          cov_2noogbhck1().b[6][0]++;
+          cov_2noogbhck1().s[15]++;
           return;
         } else {
-          cov_2ei71r63yw().b[6][1]++;
+          cov_2noogbhck1().b[6][1]++;
         }
-        cov_2ei71r63yw().s[16]++;
+        cov_2noogbhck1().s[16]++;
         focusableElement.focus();
       } else {
-        cov_2ei71r63yw().b[5][1]++;
+        cov_2noogbhck1().b[5][1]++;
       }
     },
     findHtmlElementParentVueComponent: function findHtmlElementParentVueComponent(element) {
-      cov_2ei71r63yw().f[3]++;
-      cov_2ei71r63yw().s[17]++;
+      cov_2noogbhck1().f[3]++;
+      cov_2noogbhck1().s[17]++;
       if (element === undefined) {
-        cov_2ei71r63yw().b[8][0]++;
-        cov_2ei71r63yw().s[18]++;
+        cov_2noogbhck1().b[8][0]++;
+        cov_2noogbhck1().s[18]++;
         return null;
       } else {
-        cov_2ei71r63yw().b[8][1]++;
+        cov_2noogbhck1().b[8][1]++;
       }
-      cov_2ei71r63yw().s[19]++;
+      cov_2noogbhck1().s[19]++;
       if ('__vue__' in element) {
-        cov_2ei71r63yw().b[9][0]++;
-        cov_2ei71r63yw().s[20]++;
+        cov_2noogbhck1().b[9][0]++;
+        cov_2noogbhck1().s[20]++;
         return element.__vue__;
       } else {
-        cov_2ei71r63yw().b[9][1]++;
-        cov_2ei71r63yw().s[21]++;
+        cov_2noogbhck1().b[9][1]++;
+        cov_2noogbhck1().s[21]++;
         return this.findHtmlElementParentVueComponent(element.parentNode);
       }
     },
     hasCustomFocusErrors: function hasCustomFocusErrors() {
-      cov_2ei71r63yw().f[4]++;
-      cov_2ei71r63yw().s[22]++;
+      cov_2noogbhck1().f[4]++;
+      cov_2noogbhck1().s[22]++;
       if (this.$root._hasCustomFocusErrors) {
-        cov_2ei71r63yw().b[10][0]++;
-        cov_2ei71r63yw().s[23]++;
+        cov_2noogbhck1().b[10][0]++;
+        cov_2noogbhck1().s[23]++;
         this.$off;
       } else {
-        cov_2ei71r63yw().b[10][1]++;
+        cov_2noogbhck1().b[10][1]++;
       }
     },
     listenForApiClientError: function listenForApiClientError() {
-      cov_2ei71r63yw().f[5]++;
-      cov_2ei71r63yw().s[24]++;
+      cov_2noogbhck1().f[5]++;
+      cov_2noogbhck1().s[24]++;
       if (typeof window.ProcessMaker._focusErrorsIntitalized === "undefined") {
-        cov_2ei71r63yw().b[11][0]++;
-        cov_2ei71r63yw().s[25]++;
+        cov_2noogbhck1().b[11][0]++;
+        cov_2noogbhck1().s[25]++;
         window.ProcessMaker.EventBus.$on("api-client-error", this.onApiClientError);
-        cov_2ei71r63yw().s[26]++;
+        cov_2noogbhck1().s[26]++;
         window.ProcessMaker._focusErrorsIntitalized = true;
       } else {
-        cov_2ei71r63yw().b[11][1]++;
+        cov_2noogbhck1().b[11][1]++;
       }
     },
     dontListenForApiClientError: function dontListenForApiClientError() {
-      cov_2ei71r63yw().f[6]++;
-      cov_2ei71r63yw().s[27]++;
+      cov_2noogbhck1().f[6]++;
+      cov_2noogbhck1().s[27]++;
       window.ProcessMaker.EventBus.$off("api-client-error", this.onApiClientError);
-      cov_2ei71r63yw().s[28]++;
+      cov_2noogbhck1().s[28]++;
       window.ProcessMaker._focusErrorsIntitalized = true;
     },
     onApiClientError: function onApiClientError(error) {
-      cov_2ei71r63yw().f[7]++;
-      var errors = (cov_2ei71r63yw().s[29]++, _.get(error, "response.data.errors", false));
-      cov_2ei71r63yw().s[30]++;
+      cov_2noogbhck1().f[7]++;
+      var errors = (cov_2noogbhck1().s[29]++, _.get(error, "response.data.errors", false));
+      cov_2noogbhck1().s[30]++;
       if (errors) {
-        cov_2ei71r63yw().b[12][0]++;
-        cov_2ei71r63yw().s[31]++;
+        cov_2noogbhck1().b[12][0]++;
+        cov_2noogbhck1().s[31]++;
         this.focusErrorsChanged(errors);
       } else {
-        cov_2ei71r63yw().b[12][1]++;
+        cov_2noogbhck1().b[12][1]++;
       }
     },
     focusErrorsChanged: function focusErrorsChanged(newValue) {
-      cov_2ei71r63yw().f[8]++;
-      var selector = (cov_2ei71r63yw().s[32]++, Object.entries(newValue).filter(function (_ref) {
+      cov_2noogbhck1().f[8]++;
+      var selector = (cov_2noogbhck1().s[32]++, Object.entries(newValue).filter(function (_ref) {
         var _ref2 = (0,_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, 2),
           _ = _ref2[0],
           value = _ref2[1];
-        cov_2ei71r63yw().f[9]++;
-        cov_2ei71r63yw().s[33]++;
+        cov_2noogbhck1().f[9]++;
+        cov_2noogbhck1().s[33]++;
         return value !== null;
       }) // Filter out null values
       .map(function (_ref3) {
         var _ref4 = (0,_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref3, 2),
           field = _ref4[0],
           _ = _ref4[1];
-        cov_2ei71r63yw().f[10]++;
-        cov_2ei71r63yw().s[34]++;
+        cov_2noogbhck1().f[10]++;
+        cov_2noogbhck1().s[34]++;
         return "[name='".concat(field, "']");
       }) // Select elements matching the name attribute
       .join(", "));
-      cov_2ei71r63yw().s[35]++;
+      cov_2noogbhck1().s[35]++;
       if (!selector) {
-        cov_2ei71r63yw().b[13][0]++;
-        cov_2ei71r63yw().s[36]++;
+        cov_2noogbhck1().b[13][0]++;
+        cov_2noogbhck1().s[36]++;
         return;
       } else {
-        cov_2ei71r63yw().b[13][1]++;
+        cov_2noogbhck1().b[13][1]++;
       }
-      var firstInput = (cov_2ei71r63yw().s[37]++, document.querySelector(selector)); // Find the first match
-      cov_2ei71r63yw().s[38]++;
+      var firstInput = (cov_2noogbhck1().s[37]++, document.querySelector(selector)); // Find the first match
+      cov_2noogbhck1().s[38]++;
       if (firstInput) {
-        cov_2ei71r63yw().b[14][0]++;
-        cov_2ei71r63yw().s[39]++;
+        cov_2noogbhck1().b[14][0]++;
+        cov_2noogbhck1().s[39]++;
         firstInput.focus();
       } else {
-        cov_2ei71r63yw().b[14][1]++;
+        cov_2noogbhck1().b[14][1]++;
       }
     }
   }
@@ -5632,13 +5632,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ translate)
 /* harmony export */ });
-function cov_rnhthal6w() {
-  var path = "D:\\vespar\\dev projects\\processmaker-4.14.0\\processmaker-4.14.0\\resources\\js\\modules\\lang.js";
-  var hash = "0e8a4c26248c5746a951fa21e838011236c68a33";
+function cov_1t0tsial24() {
+  var path = "/var/www/html/resources/js/modules/lang.js";
+  var hash = "785fe9e4995521260128aedbe9987f03cef231e3";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "D:\\vespar\\dev projects\\processmaker-4.14.0\\processmaker-4.14.0\\resources\\js\\modules\\lang.js",
+    path: "/var/www/html/resources/js/modules/lang.js",
     statementMap: {
       "0": {
         start: {
@@ -5686,7 +5686,7 @@ function cov_rnhthal6w() {
     },
     b: {},
     _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    hash: "0e8a4c26248c5746a951fa21e838011236c68a33"
+    hash: "785fe9e4995521260128aedbe9987f03cef231e3"
   };
   var coverage = global[gcv] || (global[gcv] = {});
   if (!coverage[path] || coverage[path].hash !== hash) {
@@ -5695,16 +5695,16 @@ function cov_rnhthal6w() {
   var actualCoverage = coverage[path];
   {
     // @ts-ignore
-    cov_rnhthal6w = function () {
+    cov_1t0tsial24 = function () {
       return actualCoverage;
     };
   }
   return actualCoverage;
 }
-cov_rnhthal6w();
+cov_1t0tsial24();
 function translate(value) {
-  cov_rnhthal6w().f[0]++;
-  cov_rnhthal6w().s[0]++;
+  cov_1t0tsial24().f[0]++;
+  cov_1t0tsial24().s[0]++;
   return value;
 }
 

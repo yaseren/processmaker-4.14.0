@@ -387,8 +387,15 @@ class LoginController extends Controller
     {
         $language = $request->cookies->get('language');
         if ($language && $language !== 'null') {
-            $user->language = json_decode($language)->code;
-            $user->save();
+            $decodedLanguage = json_decode($language, true);
+            $languageCode = is_array($decodedLanguage)
+                ? ($decodedLanguage['code'] ?? null)
+                : $language;
+
+            if (in_array($languageCode, ['fa', 'en'], true)) {
+                $user->language = $languageCode;
+                $user->save();
+            }
         }
     }
 }

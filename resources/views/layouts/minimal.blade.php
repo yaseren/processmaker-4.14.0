@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="{{ app()->getLocale() }}" dir="{{ pm_dir() }}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
     <meta name="is-prod" content="{{ config('app.env') == 'production' ? 'true' : 'false' }}">
     <meta name="i18n-mdate" content='{!! json_encode(ProcessMaker\i18nHelper::mdates()) !!}'>
     <title>@yield('title',__('Welcome')) - {{ __('ProcessMaker') }}</title>
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix(pm_css_variant('css/app.css')) }}" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ \ProcessMaker\Models\Setting::getFavicon() }}">
     @if (hasPackage('package-accessibility'))
         @include('package-accessibility::userway')

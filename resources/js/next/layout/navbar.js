@@ -15,11 +15,7 @@ const $ = getGlobalVariable("$");
 const events = getGlobalPMVariable("events");
 
 Vue.component("LanguageSelectorButton", (resolve) => {
-  if (window.ProcessMaker.languageSelectorButtonComponent) {
-    resolve(window.ProcessMaker.languageSelectorButtonComponent);
-  } else {
-    window.ProcessMaker.languageSelectorButtonComponentResolve = resolve;
-  }
+  require("../../common/resolveLanguageSelector").default(resolve);
 });
 
 // Variables

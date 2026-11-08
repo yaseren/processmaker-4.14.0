@@ -382,6 +382,24 @@ export default {
   right: 7px;
   background-color: #F2F8FE
 }
+
+[dir="rtl"] .pm-table-filter-button {
+  right: auto;
+  left: 7px;
+}
+
+[dir="rtl"] .pm-table-column-resizer {
+  right: auto;
+  left: 0;
+  border-right: 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+[dir="rtl"] .pm-table-ellipsis-column:hover .pm-table-column-header,
+[dir="rtl"] .pm-table-filter-applied .pm-table-column-header {
+  padding-left: 22px;
+  padding-right: 0;
+}
 .pm-table-ellipsis-column{
   text-transform: capitalize;
 }

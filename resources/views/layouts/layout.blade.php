@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="{{ app()->getLocale() }}" dir="{{ pm_dir() }}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,9 +37,9 @@
     @endif
     <title>@yield('title',__('Welcome')) - {{ __('ProcessMaker') }}</title>
     <link rel="icon" type="image/png" sizes="16x16" href="{{ \ProcessMaker\Models\Setting::getFavicon() }}">
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-    <link href="{{ mix('css/sidebar.css') }}" rel="stylesheet">
-    <link href="{{ mix('css/tailwind.css') }}" rel="stylesheet">
+    <link href="{{ mix(pm_css_variant('css/app.css')) }}" rel="stylesheet">
+    <link href="{{ mix(pm_css_variant('css/sidebar.css')) }}" rel="stylesheet">
+    <link href="{{ mix(pm_css_variant('css/tailwind.css')) }}" rel="stylesheet">
     <link href="/css/bpmn-symbols/css/bpmn.css" rel="stylesheet">
     @yield('css')
     <script type="text/javascript">

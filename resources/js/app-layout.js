@@ -68,11 +68,7 @@ Vue.component("TimelineItem", TimelineItem);
 Vue.component("Required", Required);
 Vue.component("Welcome", WelcomeModal);
 Vue.component("LanguageSelectorButton", (resolve) => {
-  if (window.ProcessMaker.languageSelectorButtonComponent) {
-    resolve(window.ProcessMaker.languageSelectorButtonComponent);
-  } else {
-    window.ProcessMaker.languageSelectorButtonComponentResolve = resolve;
-  }
+  require("./common/resolveLanguageSelector").default(resolve);
 });
 
 // Event bus ProcessMaker

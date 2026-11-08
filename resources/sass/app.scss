@@ -3,6 +3,7 @@
 
 // Font
 @import 'fonts';
+@import 'rtl';
 
 @import '../../public/css/precompiled/bootstrap/bootstrap.scss';
 
@@ -15,6 +16,9 @@
 @import '../../public/css/precompiled/npm-font-open-sans/open-sans.scss';
 @import "../../public/css/precompiled/poppins/300.css";
 @import "../../public/css/precompiled/poppins/500.css";
+@import "../../public/css/precompiled/vazirmatn/400.css";
+@import "../../public/css/precompiled/vazirmatn/500.css";
+@import "../../public/css/precompiled/vazirmatn/700.css";
 @import "../fonts/pm-font/processmaker-font.scss";
 
 $form-control-border-color: #b6bfc6;

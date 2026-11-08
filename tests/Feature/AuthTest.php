@@ -73,6 +73,40 @@ class AuthTest extends TestCase
         $response->assertSessionHasNoErrors();
     }
 
+    public function testLoginAcceptsPlainLanguageCookie()
+    {
+        $user = User::factory()->create([
+            'username' => 'languageuser',
+            'password' => Hash::make('password'),
+            'status' => 'ACTIVE',
+        ]);
+
+        $response = $this->withCookie('language', 'fa')->post('login', [
+            'username' => $user->username,
+            'password' => 'password',
+        ]);
+
+        $response->assertRedirect('/');
+        $this->assertSame('fa', $user->fresh()->language);
+    }
+
+    public function testLoginAcceptsLegacyJsonLanguageCookie()
+    {
+        $user = User::factory()->create([
+            'username' => 'languageuser',
+            'password' => Hash::make('password'),
+            'status' => 'ACTIVE',
+        ]);
+
+        $response = $this->withCookie('language', '{"code":"en"}')->post('login', [
+            'username' => $user->username,
+            'password' => 'password',
+        ]);
+
+        $response->assertRedirect('/');
+        $this->assertSame('en', $user->fresh()->language);
+    }
+
     /**
      * 
      * Test logout flow

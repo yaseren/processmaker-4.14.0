@@ -50,7 +50,7 @@ class UserSeeder extends Seeder
             'birthdate' => null,
             'timezone' => 'America/Los_Angeles',
             'datetime_format' => 'm/d/Y H:i',
-            'language' => 'en',
+            'language' => 'fa',
             'status' => 'ACTIVE',
         ]);
 

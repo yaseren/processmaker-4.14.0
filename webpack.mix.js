@@ -1,5 +1,7 @@
 const mix = require("laravel-mix");
 const path = require("path");
+const fs = require("fs");
+const rtlcss = require("rtlcss");
 require("laravel-mix-polyfill");
 // const packageJson = require("./package.json");
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
@@ -199,6 +201,52 @@ mix
   .postCss("resources/sass/tailwind.css", "public/css", [
     require("tailwindcss"),
   ])
-  .version();
+  .version()
+  .then(() => {
+    const rtlTargets = [
+      { source: "public/css/app.css", dest: "public/css/app.rtl.css", manifestKey: "/css/app.rtl.css", manifestFrom: "/css/app.css" },
+      { source: "public/css/sidebar.css", dest: "public/css/sidebar.rtl.css", manifestKey: "/css/sidebar.rtl.css", manifestFrom: "/css/sidebar.css" },
+      { source: "public/css/tailwind.css", dest: "public/css/tailwind.rtl.css", manifestKey: "/css/tailwind.rtl.css", manifestFrom: "/css/tailwind.css" },
+    ];
+
+    const manifestPath = path.join(__dirname, "public/mix-manifest.json");
+    const manifest = fs.existsSync(manifestPath)
+      ? JSON.parse(fs.readFileSync(manifestPath, "utf8"))
+      : {};
+
+    rtlTargets.forEach(({ source, dest, manifestKey, manifestFrom }) => {
+      if (!fs.existsSync(source)) {
+        return;
+      }
+      const rtlContent = rtlcss.process(fs.readFileSync(source, "utf8"));
+      fs.writeFileSync(dest, rtlContent);
+      if (manifest[manifestFrom]) {
+        manifest[manifestKey] = manifest[manifestFrom].replace(
+          path.basename(manifestFrom),
+          path.basename(dest),
+        );
+      } else {
+        manifest[manifestKey] = `/${dest.replace(/^public\//, "")}`;
+      }
+    });
+
+    // Font Awesome is already bundled in app.js. Webpack may skip this extract
+    // chunk, but layouts still call mix('js/fortawesome-vendor.js').
+    const fortawesomePath = path.join(__dirname, "public/js/fortawesome-vendor.js");
+    if (!fs.existsSync(fortawesomePath)) {
+      fs.writeFileSync(
+        fortawesomePath,
+        '(self["webpackChunk_processmaker_processmaker"] = self["webpackChunk_processmaker_processmaker"] || []).push([["js/fortawesome-vendor"], {}]);\n',
+      );
+    }
+    const crypto = require("crypto");
+    const fortawesomeHash = crypto
+      .createHash("md5")
+      .update(fs.readFileSync(fortawesomePath))
+      .digest("hex");
+    manifest["/js/fortawesome-vendor.js"] = `/js/fortawesome-vendor.js?id=${fortawesomeHash}`;
+
+    fs.writeFileSync(manifestPath, `${JSON.stringify(manifest, null, 4)}\n`);
+  });
 
 mix.vue({ version: 2 });

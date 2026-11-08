@@ -1,0 +1,32 @@
+{
+  "authHost": "http://web",
+  "authEndpoint": "/broadcasting/auth",
+  "clients": [
+    {
+      "appId": "processmaker-local",
+      "key": "21a795019957dde6bcd96142e05d4b10"
+    }
+  ],
+  "database": "redis",
+  "databaseConfig": {
+    "redis": {
+      "host": "redis",
+      "port": "6379"
+    }
+  },
+  "devMode": true,
+  "host": "0.0.0.0",
+  "port": "6001",
+  "protocol": "http",
+  "socketio": {},
+  "subscribers": {
+    "http": true,
+    "redis": true
+  },
+  "apiOriginAllow": {
+    "allowCors": true,
+    "allowOrigin": "*",
+    "allowMethods": "GET, POST",
+    "allowHeaders": "Origin, Content-Type, X-Auth-Token, X-Requested-With, Accept, Authorization, X-CSRF-TOKEN"
+  }
+}
